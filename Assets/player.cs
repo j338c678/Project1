@@ -35,10 +35,10 @@ public class player : MonoBehaviour
     [Header("horizontal force")]
     [Range(0, 250)]
 
-    //水平推力
+    
     public float xForce;
 
-    //垂直推力
+    
     public float yForce;
 
 

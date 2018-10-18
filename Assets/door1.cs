@@ -16,16 +16,23 @@ public class door1 : MonoBehaviour
     //}
 
     // Use this for initialization
-    void OnTriggerEnter2D(Collider2D collision)
+
+    public bool indoor = false;
+    void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (indoor == false)
         {
-            //if (Input.GetKeyDown("e"))
-            //{
-                Application.LoadLevel(LevelToLoad);
-            //}
+            if (collision.CompareTag("Player"))
+            {
+                if (Input.GetKeyDown("e"))
+                {
+                    Application.LoadLevel(LevelToLoad);
+                    indoor = true;
+                }
+
+            }
         }
-    }
+    }   
 
     private void OnTriggerExit2D(Collider2D collision)
     {

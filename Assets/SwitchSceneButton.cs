@@ -4,7 +4,7 @@ using System.Collections;
 
 public class SwitchSceneButton : MonoBehaviour
 {
-    [HideInInspector]
+    //[HideInInspector]
     public int LevelToLoad;
 
     void Awake()
@@ -19,5 +19,6 @@ public class SwitchSceneButton : MonoBehaviour
     void OnMouseDown()
     {
         Application.LoadLevel(LevelToLoad);
+        
     }
 }
