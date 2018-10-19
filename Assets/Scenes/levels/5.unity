@@ -1549,7 +1549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelToLoad: 1
-  indoor: 0
+  indoor: 1
 --- !u!61 &913585220
 BoxCollider2D:
   m_ObjectHideFlags: 0
